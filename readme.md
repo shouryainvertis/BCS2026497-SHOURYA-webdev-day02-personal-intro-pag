@@ -59,7 +59,13 @@ personal-intro-page/
 
 ## Author
 
-Your Name
+Shourya Maheshwari
+
+
+## Website Screenshot
+
+![My Personal Introduction Page](screenshots/personal-intro.png)
+
 
 ## Assignment
 
