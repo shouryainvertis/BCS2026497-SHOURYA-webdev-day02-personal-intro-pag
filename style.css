@@ -1,0 +1,242 @@
+
+/* 1. Basic Page Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6fc;
+    color: #263248;
+    line-height: 1.7;
+}
+
+/* 2. Header Section */
+
+.hero {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    min-height: 380px;
+    padding: 25px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.navbar p {
+    color: #dbeafe;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 75px 10px 45px;
+}
+
+.welcome {
+    color: #bfdbfe;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin: 12px 0;
+}
+
+.subtitle {
+    color: #dbeafe;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #1d4ed8;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #dbeafe;
+    transform: translateY(-3px);
+}
+
+/* 3. Main Container */
+
+.container {
+    max-width: 950px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* 4. Content Cards */
+
+.card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #2563eb;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.card h2 {
+    color: #1e40af;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.underline {
+    height: 3px;
+    width: 55px;
+    background-color: #3b82f6;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 12px;
+    color: #475569;
+}
+
+/* 5. Education Section */
+
+.education-item {
+    background-color: #eff6ff;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.education-item h3 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    margin-bottom: 5px;
+}
+
+/* 6. Skills Section */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.skills-list span {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* 7. Interests Section */
+
+.interest-list {
+    padding-left: 25px;
+}
+
+.interest-list li {
+    margin-bottom: 10px;
+    color: #475569;
+}
+
+/* 8. Footer Section */
+
+.footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.footer h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #bfdbfe;
+}
+
+.copyright {
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+/* 9. Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero-content {
+        padding-top: 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .card h2 {
+        font-size: 21px;
+    }
+
+    .skills-list {
+        gap: 8px;
+    }
+
+    .skills-list span {
+        padding: 8px 14px;
+    }
+}
